@@ -1,0 +1,8 @@
+.MenuBar {
+    width: 100%;
+    display: flex;
+    /* -webkit-transition: background-color 0.6s;  Safari  */
+    /* transition: background-color 0.6s; */
+    background-color: #ef919c;
+    display: 'flex';
+}
