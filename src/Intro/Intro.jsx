@@ -3,12 +3,18 @@ import { withRouter } from 'react-router-dom'
 import Grid from '@material-ui/core/Grid';
 import "./Intro.css"
 import { Divider } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
 
 export const Intro = (props) => {
     return (
     <Grid className="Title"
         container spacing={2}>
-        <Grid item>
+        <Grid item style={
+            {
+                paddingRight: "30px"
+            }
+        }
+        >
             <img
             style ={
                 {
@@ -22,17 +28,33 @@ export const Intro = (props) => {
             src="https://avatars.githubusercontent.com/u/67668461?s=400&u=99a013eff976ed3450bb204c762f8fe459c5fb1c&v=4"
             />
         </Grid>
-        <Divider/>
-        <Grid item style={
-                {
-                    paddingLeft: "20px"
-                }
-            }>
-            <Grid item >
-                <h1>Jiye Lee</h1>
+
+            <Grid item>
+                <Grid item >
+                    {/* <h1>Jiye Lee</h1> */}
+                    <br></br>
+                    <Typography variant="h4" style={
+                        {
+                            fontWeight: "550"
+                        }
+                    }>Jiye Lee</Typography>
+                </Grid>
+                <Grid item >
+                    {/* <h1>Jiye Lee</h1> */}
+                    <Divider style={
+                        {
+                            marginTop:"8px",
+                            marginBottom:"5px"
+                        }
+                    }></Divider>
+                    <Typography variant="h6" style={
+                        {
+                            fontWeight: "400",
+                            fontSize: "18px"
+                        }
+                    }>Steady Enthusiast. Researcher in Training.</Typography>
+                </Grid>
             </Grid>
-                <h2>Explanation long long long long long long</h2>
         </Grid>
-    </Grid>
     )
 }
