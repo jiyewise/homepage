@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 
 export const Intro = (props) => {
     return (
+    <div className="IntroContainer">
     <Grid className="Title"
         container spacing={2}>
         <Grid item style={
@@ -18,8 +19,8 @@ export const Intro = (props) => {
             <img
             style ={
                 {
-                    width: "150px",
-                    height: "150px",
+                    width: "120px",
+                    height: "120px",
                     borderWidth: "2px",
                     borderRadius: "75px",
                     alignContent: "flex-start"
@@ -33,9 +34,9 @@ export const Intro = (props) => {
                 <Grid item >
                     {/* <h1>Jiye Lee</h1> */}
                     <br></br>
-                    <Typography variant="h4" style={
+                    <Typography variant="h5" style={
                         {
-                            fontWeight: "550"
+                            fontWeight: "450"
                         }
                     }>Jiye Lee</Typography>
                 </Grid>
@@ -50,11 +51,12 @@ export const Intro = (props) => {
                     <Typography variant="h6" style={
                         {
                             fontWeight: "400",
-                            fontSize: "18px"
+                            fontSize: "16px"
                         }
                     }>Steady Enthusiast. Researcher in Training.</Typography>
                 </Grid>
             </Grid>
         </Grid>
+    </div>
     )
 }
