@@ -5,6 +5,9 @@ import "./Intro.css"
 import { Divider } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import SchoolIcon from '@material-ui/icons/School';
 
 const theme = createMuiTheme({
   typography: {
@@ -61,12 +64,8 @@ export const Intro = (props) => {
 
     const renderAbout = () => {
         return (
-            <Grid container className="About">
-                <Grid item style={
-                    {
-                        direction: "row"
-                    }
-                }>
+            <Grid container direction="column" className="About">
+                <Grid item >
                     <Typography variant="h5">About</Typography>
                 </Grid>
                 <Grid item>
@@ -85,6 +84,162 @@ export const Intro = (props) => {
         )
     }
 
+    const renderEdu = () => {
+        return (
+            <Grid container direction="column" >
+                <Grid item>
+                    <Typography variant="h5">Education</Typography>
+                </Grid>
+                <Grid item>
+                <Divider style={
+                            {
+                                marginTop:"8px",
+                                marginBottom:"5px"
+                            }
+                        }></Divider>
+                    <List dense="false">
+                        <ListItem>
+                            <Grid container direction="row"  style={
+                                {
+                                    paddingLeft: "0px"
+                                } 
+                            } >
+                                {/* <Grid item>
+                                    <SchoolIcon/>
+                                </Grid> */}
+                                <Grid item xs="12" md="3" style={
+                                    {
+                                        paddingBottom: "10px"
+                                    }
+                                }>
+                                    <Typography>Mar 2017 - Aug 2021  (Expected)</Typography>
+                                </Grid>
+                                <Grid item>
+                                <Typography>College of Liberal Studies, Seoul National University</Typography>
+                                <Typography style={
+                                    {
+                                        fontSize: "15px",
+                                        fontStyle: "italic",
+                                        paddingTop: "5px"
+                                    }
+                                }>B.S. in Chemistry & B.S in Computer Science and Engineering</Typography>
+                                </Grid>
+                            </Grid>
+                        </ListItem>
+                        <br></br>
+                        <ListItem>
+                            <Grid container direction="row">
+                                {/* <Grid item>
+                                    <SchoolIcon/>
+                                </Grid> */}
+                                <Grid item xs="12" md="3" style={
+                                    {
+                                        paddingBottom: "10px"
+                                    }
+                                }>
+                                    <Typography >Mar 2014 - Feb 2017</Typography>
+                                </Grid>
+                                <Grid item>
+                                <Typography>Daewon Foreign Language High School</Typography>
+                                <Typography style={
+                                    {
+                                        fontSize: "15px",
+                                        fontStyle: "italic",
+                                        paddingTop: "5px"
+                                    }
+                                }>Department of Chinese Language</Typography>
+                                </Grid>
+                            </Grid>
+                        </ListItem>
+                    </List>
+                </Grid>
+            </Grid>
+        )
+    }
+
+    const renderResExp = () => {
+        return (
+            <Grid container direction="column">
+                <Grid item>
+                    <Typography variant="h5">Research Experiences</Typography>
+                </Grid>
+                <Grid item>
+                <Divider style={
+                            {
+                                marginTop:"8px",
+                                marginBottom:"5px"
+                            }
+                        }></Divider>
+                    <Typography style={
+                        {
+                            fontWeight: "500",
+                            marginTop: "10px"
+                        }
+                    }>Undergraduate Research Intern
+                    </Typography>
+                    <List dense="false">
+                        <ListItem>
+                            <Grid container direction="row"
+                            >
+                                {/* <Grid item>
+                                    <SchoolIcon/>
+                                </Grid> */}
+                                <Grid item item xs="12" md="3" style={
+                                    {
+                                        paddingBottom: "10px"
+                                    }
+                                }>
+                                    <Typography>Jul 2020 - present</Typography>
+                                </Grid>
+                                <Grid item >
+                                <Typography>Movement Research Lab.</Typography>
+                                <Typography style={
+                                    {
+                                        fontSize: "15px",
+                                        // fontStyle: "italic",
+                                        // paddingTop: "5px"
+                                    }
+                                }>Department of Computer Science and Enginneering, Seoul National University</Typography>
+                                </Grid>
+                            </Grid>
+                        </ListItem>
+                        <br></br>
+                        <ListItem>
+                            <Grid container direction="row">
+                                {/* <Grid item>
+                                    <SchoolIcon/>
+                                </Grid> */}
+                                <Grid item  xs="12" md="3" style={
+                                    {
+                                        paddingBottom: "10px"
+                                    }
+                                }>
+                                    <Typography>Dec 2018 - Jun 2020</Typography>
+                                </Grid>
+                                <Grid item>
+                                <Typography>NMR Laboratory of Protein Aggregation and Recognition</Typography>
+                                <Typography style={
+                                    {
+                                        fontSize: "15px",
+                                        // fontStyle: "italic",
+                                        // paddingTop: "5px"
+                                    }
+                                }>Department of Chemistry, Seoul National University</Typography>
+                                </Grid>
+                            </Grid>
+                        </ListItem>
+                    </List>
+                </Grid>
+            </Grid>
+        )
+    }
+
+    // TODO
+    // Research Interests
+    // Awards
+    // Skills
+    // Contact
+    
     return (
         <ThemeProvider theme={theme}>
             <div className="IntroContainer">
@@ -92,6 +247,12 @@ export const Intro = (props) => {
             <br></br>
             <br></br>
             {renderAbout()}
+            <br></br>
+            <br></br>
+            {renderEdu()}
+            <br></br>
+            <br></br>
+            {renderResExp()}
             </div>
     </ThemeProvider>
     )

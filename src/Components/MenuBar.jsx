@@ -52,7 +52,7 @@ export const MenuBar = (props) => {
         }>
             <Button>Home</Button>
             <Button>Projects</Button>
-            <Button>Other Stuff</Button>
+            <Button>Personal</Button>
             <Button>CV</Button>
         </List>
         </div>
