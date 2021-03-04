@@ -1,13 +1,20 @@
 .Title {
-    margin: 40px auto 30px !important;
-    padding: 0px 30px;
+    /* margin: 40px auto 30px !important; */
+    /* padding: 0px 30px; */
 }
-@media only screen and (min-width: 48.0625em){
+@media only screen{
 .IntroContainer {
     margin-right: auto;
     margin-left: auto;
     margin-top: 3rem;
     width: calc(100% - 8rem);
-    max-width: 50rem;
+    max-width: 70rem;
 }
+}
+
+@media only screen and (min-width: 573px) {
+.Name{
+    padding-top: 30px !important;
+    padding-left: 20px !important;
+    }
 }

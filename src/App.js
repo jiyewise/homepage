@@ -3,6 +3,15 @@ import './App.css';
 import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom'
 import { Intro } from './Intro/Intro';
 import { MenuBar } from './Components/MenuBar';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      'Raleway',
+    ].join(','),
+  },});
+
 function App() {
   return (
     // <div className="App">
@@ -21,15 +30,17 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <BrowserRouter>
-        <div>
-          {/* <h1>Hello!</h1> */}
-          {/* <Switch> */}
-          {/* </Switch> */}
-          <MenuBar/>
-          <Route path='/' exact render={()=><Intro/>}/>
-        </div>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+          <div>
+            {/* <h1>Hello!</h1> */}
+            {/* <Switch> */}
+            {/* </Switch> */}
+            <MenuBar/>
+            <Route path='/' exact render={()=><Intro/>}/>
+          </div>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
