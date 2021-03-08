@@ -345,7 +345,7 @@ export const Intro = (props) => {
                                 </Grid> */}
                                 <Grid item item xs="12" md="3" style={
                                     {
-                                        // paddingBottom: "10px"
+                                        paddingBottom: "10px"
                                     }
                                 }>
                                     <Typography>Jun 2019 - Jul 2019 </Typography>
