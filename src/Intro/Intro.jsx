@@ -115,7 +115,11 @@ export const Intro = (props) => {
                                     <Typography>Mar 2017 - Aug 2021  (Expected)</Typography>
                                 </Grid>
                                 <Grid item>
-                                <Typography>College of Liberal Studies, Seoul National University</Typography>
+                                <Typography style={
+                                    {
+                                        fontWeight: "500"
+                                    }
+                                }>College of Liberal Studies, Seoul National University</Typography>
                                 <Typography style={
                                     {
                                         fontSize: "15px",
@@ -140,7 +144,11 @@ export const Intro = (props) => {
                                     <Typography >Mar 2014 - Feb 2017</Typography>
                                 </Grid>
                                 <Grid item>
-                                <Typography>Daewon Foreign Language High School</Typography>
+                                <Typography style={
+                                    {
+                                        fontWeight: "500"
+                                    }
+                                }>Daewon Foreign Language High School</Typography>
                                 <Typography style={
                                     {
                                         fontSize: "15px",
@@ -157,11 +165,11 @@ export const Intro = (props) => {
         )
     }
 
-    const renderResExp = () => {
+    const renderExp = () => {
         return (
             <Grid container direction="column">
                 <Grid item>
-                    <Typography variant="h5">Research Experiences</Typography>
+                    <Typography variant="h5">Experience</Typography>
                 </Grid>
                 <Grid item>
                 <Divider style={
@@ -175,7 +183,7 @@ export const Intro = (props) => {
                             fontWeight: "500",
                             marginTop: "10px"
                         }
-                    }>Undergraduate Research Intern
+                    }>Research Experience
                     </Typography>
                     <List dense="false">
                         <ListItem>
@@ -192,14 +200,27 @@ export const Intro = (props) => {
                                     <Typography>Jul 2020 - present</Typography>
                                 </Grid>
                                 <Grid item >
-                                <Typography>Movement Research Lab.</Typography>
-                                <Typography style={
-                                    {
-                                        fontSize: "15px",
-                                        // fontStyle: "italic",
-                                        // paddingTop: "5px"
-                                    }
-                                }>Department of Computer Science and Enginneering, Seoul National University</Typography>
+                                        <Grid container direction="row">
+                                            <Typography style={
+                                                {
+                                                    fontWeight: "500",
+                                                    paddingRight: "4px"
+                                                }
+                                            }>Movement Research Lab</Typography>
+                                            <Typography style={
+                                                {
+                                                    fontSize: "13px",
+                                                    paddingTop: "3px"
+                                                }
+                                            }>| Department of Computer Science and Engineering, Seoul National University</Typography>
+                                        </Grid>
+                                        <Typography style={
+                                            {
+                                                paddingTop: "5px",
+                                                fontSize: "15px",
+                                                fontWeight: "400"
+                                            }
+                                        }>Undergraduate Research Intern </Typography>
                                 </Grid>
                             </Grid>
                         </ListItem>
@@ -217,17 +238,135 @@ export const Intro = (props) => {
                                     <Typography>Dec 2018 - Jun 2020</Typography>
                                 </Grid>
                                 <Grid item>
-                                <Typography>NMR Laboratory of Protein Aggregation and Recognition</Typography>
+                                {/* <Typography>NMR Laboratory of Protein Aggregation and Recognition</Typography>
                                 <Typography style={
                                     {
                                         fontSize: "15px",
                                         // fontStyle: "italic",
-                                        // paddingTop: "5px"
+                                        paddingTop: "5px"
                                     }
-                                }>Department of Chemistry, Seoul National University</Typography>
+                                }>Department of Chemistry, Seoul National University</Typography> */}
+                                    <Grid container direction="row">
+                                            <Typography style={
+                                                {
+                                                    fontWeight: "500",
+                                                    paddingRight: "4px"
+                                                }
+                                            }>NMR Laboratory of Protein Aggregation and Recognition</Typography>
+                                            <Typography style={
+                                                {
+                                                    fontSize: "13px",
+                                                    paddingTop: "3px"
+                                                }
+                                            }>| Department of Chemistry, Seoul National University</Typography>
+                                        </Grid>
+                                        <Typography style={
+                                            {
+                                                paddingTop: "5px",
+                                                fontSize: "15px",
+                                                fontWeight: "400",
+                                            }
+                                        }>Undergraduate Research Intern</Typography>
                                 </Grid>
                             </Grid>
                         </ListItem>
+                    </List>
+                </Grid>
+                <Grid item>
+                    <Typography style={
+                        {
+                            fontWeight: "500",
+                        }
+                    }>Work Experience 
+                    </Typography>
+                    <List dense="false" style={
+                        {
+                            // paddingBottom: "0px"
+                        }
+                    }>
+                        <ListItem style={
+                            {
+                                // paddingBottom: "0px"
+                            }
+                        }>
+                            <Grid container direction="row"
+                            >
+                                {/* <Grid item>
+                                    <SchoolIcon/>
+                                </Grid> */}
+                                <Grid item item xs="12" md="3" style={
+                                    {
+                                        paddingBottom: "10px"
+                                    }
+                                }>
+                                    <Typography>Mar 2021 - Jun 2021 (21' Spring)</Typography>
+                                </Grid>
+                                <Grid item >
+                                <Typography style={
+                                    {
+                                        fontWeight: "500"
+                                    }
+                                }>Undergraduate Teaching Assistant</Typography>
+                                <Typography style={
+                                    {
+                                        fontSize: "15px",
+                                        // fontStyle: "italic",
+                                        paddingTop: "5px"
+                                    }
+                                }>Data Structures Course</Typography>
+                                </Grid>
+                            </Grid>
+                        </ListItem>
+
+                    </List>
+                </Grid>
+                <Grid item>
+                    <Typography style={
+                        {
+                            fontWeight: "500",
+                            marginTop: "10px"
+                        }
+                    }>Volunteer Services
+                    </Typography>
+                    <List dense="false" style={
+                        {
+                            paddingBottom: "0px"
+                        }
+                    }>
+                        <ListItem style={
+                            {
+                                paddingBottom: "0px"
+                            }
+                        }>
+                            <Grid container direction="row"
+                            >
+                                {/* <Grid item>
+                                    <SchoolIcon/>
+                                </Grid> */}
+                                <Grid item item xs="12" md="3" style={
+                                    {
+                                        // paddingBottom: "10px"
+                                    }
+                                }>
+                                    <Typography>Jun 2019 - Jul 2019 </Typography>
+                                </Grid>
+                                <Grid item >
+                                <Typography style={
+                                    {
+                                        fontWeight: "500"
+                                    }
+                                }>Research Assistant</Typography>
+                                <Typography style={
+                                    {
+                                        fontSize: "15px",
+                                        // fontStyle: "italic",
+                                        paddingTop: "5px"
+                                    }
+                                }>Society of Scientists and Engineers without Borders, Seoul, South Korea</Typography>
+                                </Grid>
+                            </Grid>
+                        </ListItem>
+
                     </List>
                 </Grid>
             </Grid>
@@ -235,8 +374,77 @@ export const Intro = (props) => {
     }
 
     // TODO
+    
     // Research Interests
     // Awards
+    const renderAwards = () => {
+        return (
+            <Grid container direction="column">
+            <Grid item>
+                <Typography variant="h5">Awards & Honors</Typography>
+            </Grid>
+                <Grid item>
+                    <Divider style={
+                        {
+                            marginTop:"8px",
+                            marginBottom:"5px"
+                        }
+                    }></Divider>
+                </Grid>
+                <List>
+                <ListItem>
+                    <Grid item>
+                        <Typography style={
+                            {
+                                fontWeight: "500"
+                            }
+                        }>SNU Undergraduate Research Award</Typography>
+                        <Typography style={
+                            {
+                                fontSize: "15px",
+                                paddingTop: "5px"
+
+                            }
+                        }>3<sup>rd</sup> place award (Presidental Award), Seoul National University</Typography>
+                    </Grid>
+                                
+                </ListItem>
+                <ListItem>
+                    <Grid item>
+                        <Typography style={
+                            {
+                                fontWeight: "500"
+                            }
+                        }>Outstanding Undergraduate Research in Chemistry</Typography>
+                        <Typography style={
+                            {
+                                fontSize: "15px",
+                                paddingTop: "5px"
+
+                            }
+                        }>2<sup>nd</sup> place award, Department of Chemistry in Seoul National University</Typography>
+                    </Grid>
+                </ListItem>
+                <ListItem>
+                    <Grid item>
+                        <Typography style={
+                            {
+                                fontWeight: "500"
+                            }
+                        }>SNU Undergraduate Research Grant</Typography>
+                        <Typography style={
+                            {
+                                fontSize: "15px",
+                                paddingTop: "5px"
+
+                            }
+                        }>Granted by Faculty of Liberal Education, Seoul National University</Typography>
+                    </Grid>           
+                </ListItem>
+                </List>
+                </Grid>
+        )
+    }
     // Skills
     // Contact
     
@@ -249,10 +457,11 @@ export const Intro = (props) => {
             {renderAbout()}
             <br></br>
             <br></br>
+            {renderExp()}
+            <br></br>
             {renderEdu()}
             <br></br>
-            <br></br>
-            {renderResExp()}
+            {renderAwards()}
             </div>
     </ThemeProvider>
     )
