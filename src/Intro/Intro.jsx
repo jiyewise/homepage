@@ -14,6 +14,8 @@ import PublicOutlinedIcon from '@material-ui/icons/PublicOutlined';
 import CropOutlinedIcon from '@material-ui/icons/CropOutlined';
 import Paper from '@material-ui/core/Paper';
 import LayersOutlinedIcon from '@material-ui/icons/LayersOutlined';
+import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
+
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
@@ -488,7 +490,8 @@ export const Intro = (props) => {
                             }></PublicOutlinedIcon>
                             <Typography style={
                                 {
-                                    paddingBottom: "5px"
+                                    paddingBottom: "5px",
+                                    fontWeight: "500"
                                 }
                             }>Language</Typography>
                             <Typography style={
@@ -529,7 +532,8 @@ export const Intro = (props) => {
                             }></CodeOutlinedIcon>
                             <Typography style={
                                 {
-                                    paddingBottom: "5px"
+                                    paddingBottom: "5px",
+                                    fontWeight: "500"
                                 }
                             }>Programming</Typography>
                             <Typography style={
@@ -576,7 +580,8 @@ export const Intro = (props) => {
                             }></LanguageOutlinedIcon>
                             <Typography style={
                                 {
-                                    paddingBottom: "5px"
+                                    paddingBottom: "5px",
+                                    fontWeight: "500"
                                 }
                             }>Web</Typography>
                             <Typography style={
@@ -623,7 +628,9 @@ export const Intro = (props) => {
                             }></CropOutlinedIcon>
                             <Typography style={
                                 {
-                                    paddingBottom: "5px"
+                                    paddingBottom: "5px",
+                                    paddingTop: "1px",
+                                    fontWeight: "500"
                                 }
                             }>Design & Adobe</Typography>
                             <Typography style={
@@ -653,7 +660,7 @@ export const Intro = (props) => {
                             }><br/></Typography>
                         </Paper>
                     </Grid>
-                                        <Grid item xs={12} sm={6} md={2} lg={2}>
+                    <Grid item xs={12} sm={6} md={2} lg={2}>
                         <br></br>
                         <Paper style={
                             {
@@ -670,7 +677,8 @@ export const Intro = (props) => {
                             }></LayersOutlinedIcon>
                             <Typography style={
                                 {
-                                    paddingBottom: "5px"
+                                    paddingBottom: "5px",
+                                    fontWeight: "500"
                                 }
                             }>Framework</Typography>
                             <Typography style={
@@ -705,7 +713,7 @@ export const Intro = (props) => {
         )
     }
     // Contact
-    
+
     return (
         <ThemeProvider theme={theme}>
             <div className="IntroContainer">
@@ -722,6 +730,8 @@ export const Intro = (props) => {
             {renderAwards()}
             <br></br>
             {renderSkills()}
+            <br></br>
+            {renderContact()}
             <br></br>
             </div>
     </ThemeProvider>
