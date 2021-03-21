@@ -8,7 +8,12 @@ import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import SchoolIcon from '@material-ui/icons/School';
-
+import LanguageOutlinedIcon from '@material-ui/icons/LanguageOutlined';
+import CodeOutlinedIcon from '@material-ui/icons/CodeOutlined';
+import PublicOutlinedIcon from '@material-ui/icons/PublicOutlined';
+import CropOutlinedIcon from '@material-ui/icons/CropOutlined';
+import Paper from '@material-ui/core/Paper';
+import LayersOutlinedIcon from '@material-ui/icons/LayersOutlined';
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
@@ -299,7 +304,7 @@ export const Intro = (props) => {
                                         paddingBottom: "10px"
                                     }
                                 }>
-                                    <Typography>Mar 2021 - Jun 2021 (21' Spring)</Typography>
+                                    <Typography>Mar 2021 - Jun 2021</Typography>
                                 </Grid>
                                 <Grid item >
                                 <Typography style={
@@ -313,7 +318,7 @@ export const Intro = (props) => {
                                         // fontStyle: "italic",
                                         paddingTop: "5px"
                                     }
-                                }>Data Structures Course</Typography>
+                                }>Data Structures Course (21' Spring)</Typography>
                                 </Grid>
                             </Grid>
                         </ListItem>
@@ -446,6 +451,259 @@ export const Intro = (props) => {
         )
     }
     // Skills
+    const renderSkills = () => {
+        return (
+            <Grid container direction="column">
+            <Grid item>
+                <Typography variant="h5">Skills</Typography>
+            </Grid>
+                <Grid item>
+                    <Divider style={
+                        {
+                            marginTop:"8px",
+                            marginBottom:"5px"
+                        }
+                    }></Divider>
+                </Grid>
+                <Grid
+                container
+                direction="row"
+                justify="space-evenly"
+                alignItems="center"
+                >
+                    <Grid item xs={12} sm={6} md={2} lg={2}>
+                        <br></br>
+                        <Paper style={
+                            {
+                                padding: theme.spacing(3),
+                                textAlign: "center"
+                            }
+                        }>
+                            <PublicOutlinedIcon style={
+                                {
+                                    fontSize: "50",
+                                    color: "#ef919c",
+                                    textAlign: "center"
+                                }
+                            }></PublicOutlinedIcon>
+                            <Typography style={
+                                {
+                                    paddingBottom: "5px"
+                                }
+                            }>Language</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>Korean (Native)</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+
+                                }
+                            }>English (Fluent)</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>Mandarin Chinese <br></br>(Conversational)</Typography>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={2} lg={2}>
+                        <br></br>
+                        <Paper style={
+                            {
+                                padding: theme.spacing(3),
+                                textAlign: "center"
+                            }
+                        }>
+                            <CodeOutlinedIcon style={
+                                {
+                                    fontSize: "50",
+                                    color: "#ef919c",
+                                    textAlign: "center"
+                                }
+                            }></CodeOutlinedIcon>
+                            <Typography style={
+                                {
+                                    paddingBottom: "5px"
+                                }
+                            }>Programming</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>Python</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+
+                                }
+                            }>C++</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>JAVA</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>C</Typography>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={2} lg={2}>
+                        <br></br>
+                        <Paper style={
+                            {
+                                padding: theme.spacing(3),
+                                textAlign: "center"
+                            }
+                        }>
+                            <LanguageOutlinedIcon style={
+                                {
+                                    fontSize: "50",
+                                    color: "#ef919c",
+                                    textAlign: "center"
+                                }
+                            }></LanguageOutlinedIcon>
+                            <Typography style={
+                                {
+                                    paddingBottom: "5px"
+                                }
+                            }>Web</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>React JS</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+
+                                }
+                            }>Django</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>JavaScript</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>HTML, CSS</Typography>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={2} lg={2}>
+                        <br></br>
+                        <Paper style={
+                            {
+                                padding: theme.spacing(3),
+                                textAlign: "center"
+                            }
+                        }>
+                            <CropOutlinedIcon style={
+                                {
+                                    fontSize: "47",
+                                    color: "#ef919c",
+                                    textAlign: "center"
+                                }
+                            }></CropOutlinedIcon>
+                            <Typography style={
+                                {
+                                    paddingBottom: "5px"
+                                }
+                            }>Design & Adobe</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>Illurstrator</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+
+                                }
+                            }>Photoshop</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>Premiere Pro</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }><br/></Typography>
+                        </Paper>
+                    </Grid>
+                                        <Grid item xs={12} sm={6} md={2} lg={2}>
+                        <br></br>
+                        <Paper style={
+                            {
+                                padding: theme.spacing(3),
+                                textAlign: "center"
+                            }
+                        }>
+                            <LayersOutlinedIcon style={
+                                {
+                                    fontSize: "50",
+                                    color: "#ef919c",
+                                    textAlign: "center"
+                                }
+                            }></LayersOutlinedIcon>
+                            <Typography style={
+                                {
+                                    paddingBottom: "5px"
+                                }
+                            }>Framework</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>NumPy</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+
+                                }
+                            }>PyTorch</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }>OpenGL</Typography>
+                            <Typography style={
+                                {
+                                    fontSize: "14px",
+                                    paddingBottom: "1px"
+                                }
+                            }><br/></Typography>
+                        </Paper>
+                    </Grid>
+                </Grid>
+            </Grid>
+        )
+    }
     // Contact
     
     return (
@@ -462,6 +720,9 @@ export const Intro = (props) => {
             {renderEdu()}
             <br></br>
             {renderAwards()}
+            <br></br>
+            {renderSkills()}
+            <br></br>
             </div>
     </ThemeProvider>
     )
