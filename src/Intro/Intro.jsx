@@ -184,16 +184,16 @@ export const Intro = (props) => {
                                 marginBottom:"5px"
                             }
                         }></Divider>
-                    <Typography style={
+                    <Typography className="subtitle" style={
                         {
                             fontWeight: "500",
                             marginTop: "10px",
                         }
-                    }>Research Experience
+                    }> Research Experience
                     </Typography>
-                        <ListItem style={
+                        <ListItem className="res_item" style={
                             {
-                                marginBottom: "20px"
+                                // marginBottom: "10px"
                             }
                         }>
                             <Grid container direction="row" style={
@@ -237,7 +237,7 @@ export const Intro = (props) => {
                         <ListItem style={
                             {
                                 paddingBottom: "0px",
-                                marginBottom: "20px"
+                                marginBottom: "0px"
                             }
                         }>
                             <Grid container direction="row">
@@ -290,7 +290,7 @@ export const Intro = (props) => {
                     </Typography>
                         <ListItem style={
                             {
-                                // paddingBottom: "0px"
+                                paddingBottom: "0px"
                             }
                         }>
                             <Grid container direction="row"
@@ -328,13 +328,8 @@ export const Intro = (props) => {
                             fontWeight: "500",
                             marginTop: "10px"
                         }
-                    }>Volunteer Services
+                    } className="subtitle">Volunteer Services
                     </Typography>
-                    <List dense="false" style={
-                        {
-                            paddingBottom: "0px"
-                        }
-                    }>
                         <ListItem style={
                             {
                                 paddingBottom: "0px"
@@ -345,9 +340,9 @@ export const Intro = (props) => {
                                 {/* <Grid item>
                                     <SchoolIcon/>
                                 </Grid> */}
-                                <Grid item item xs="12" md="3" style={
+                                <Grid item xs="12" md="3" style={
                                     {
-                                        paddingBottom: "10px"
+                                        // paddingBottom: "10px"
                                     }
                                 }>
                                     <Typography>Jun 2019 - Jul 2019 </Typography>
@@ -368,8 +363,6 @@ export const Intro = (props) => {
                                 </Grid>
                             </Grid>
                         </ListItem>
-
-                    </List>
                 </Grid>
             </Grid>
         )
