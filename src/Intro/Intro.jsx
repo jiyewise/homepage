@@ -70,7 +70,11 @@ export const Intro = (props) => {
 
     const renderAbout = () => {
         return (
-            <Grid container direction="column" className="About">
+            <Grid container direction="column" className="About" style={
+                {
+                    marginBottom: "5px"
+                }
+            }>
                 <Grid item >
                     <Typography variant="h5">About</Typography>
                 </Grid>
@@ -81,10 +85,18 @@ export const Intro = (props) => {
                                 marginBottom:"5px"
                             }
                         }></Divider>
-                    <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Typography>
+                    <Typography style={
+                        {
+                            fontSize: "15px"
+                        }
+                    }>Hi there, I am a final year undergrad at Seoul National University, majoring in <strong style={{fontWeight: "500"}}>Chemistry</strong> and <strong style={{fontWeight: "500"}}>Computer Science & Engineering</strong>.
+                        Currently I am working as a research intern in <strong style={{fontWeight: "500"}}>SNU Movement Research Lab</strong> advised by <strong style={{fontWeight: "500"}}>Jehee Lee</strong>, focusing on <strong style={{fontWeight: "500"}}>computer simulations of human and animal movements</strong>.
+                        <br/><br/>I am now exploring various topics which include, but are not limited to <strong style={{fontWeight: "500"}}>physics-based simulations</strong>, <strong style={{fontWeight: "500"}}>reinforcement learning</strong>, <strong style={{fontWeight: "500"}}>robotics</strong> and <strong style={{fontWeight: "500"}}>biomechanics</strong>.
+                        Previously, I have been interested in <strong style={{fontWeight: "500"}}>biophysics</strong>, exploring diverse <strong style={{fontWeight: "500"}}> physico-chemical approaches for understanding protein dynamics</strong>. <br></br><br></br>Find out more about my projects <u>here</u>. <small>(will be updated soon!)</small>
+                        <br></br>
+                        <br></br>
+                        Outside of research, I have a great passion for <strong style={{fontWeight: "500"}}>digital art, hand-drawing, live music concerts,</strong> and <strong style={{fontWeight: "500"}}>Sci-Fi</strong>. Click <u>here</u> to check out my personal work. <br></br><small>(will be updated soon!)</small>
+                    </Typography>
                 </Grid>
             </Grid>
         )
@@ -443,7 +455,11 @@ export const Intro = (props) => {
     // Skills
     const renderSkills = () => {
         return (
-            <Grid container direction="column">
+            <Grid container direction="column" style={
+                {
+                    marginBottom: "5px"
+                }
+            }>
             <Grid item>
                 <Typography variant="h5">Skills</Typography>
             </Grid>
@@ -765,7 +781,7 @@ export const Intro = (props) => {
             <br></br>
             {renderAbout()}
             <br></br>
-            <br></br>
+            {/* <br></br> */}
             {renderExp()}
             <br></br>
             {renderEdu()}
