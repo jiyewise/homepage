@@ -7,14 +7,13 @@ import Typography from '@material-ui/core/Typography';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import SchoolIcon from '@material-ui/icons/School';
 import LanguageOutlinedIcon from '@material-ui/icons/LanguageOutlined';
 import CodeOutlinedIcon from '@material-ui/icons/CodeOutlined';
 import PublicOutlinedIcon from '@material-ui/icons/PublicOutlined';
 import CropOutlinedIcon from '@material-ui/icons/CropOutlined';
 import Paper from '@material-ui/core/Paper';
 import LayersOutlinedIcon from '@material-ui/icons/LayersOutlined';
-import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
+import { AiOutlineGithub, AiOutlineMail  } from "react-icons/ai";
 
 const theme = createMuiTheme({
   typography: {
@@ -188,22 +187,26 @@ export const Intro = (props) => {
                     <Typography style={
                         {
                             fontWeight: "500",
-                            marginTop: "10px"
+                            marginTop: "10px",
                         }
                     }>Research Experience
                     </Typography>
-                    <List dense="false">
-                        <ListItem>
-                            <Grid container direction="row"
+                        <ListItem style={
+                            {
+                                marginBottom: "20px"
+                            }
+                        }>
+                            <Grid container direction="row" style={
+                                {
+                                    marginBottom: "0px",
+                                    paddingBottom: "0px"
+                                }
+                            }
                             >
                                 {/* <Grid item>
                                     <SchoolIcon/>
                                 </Grid> */}
-                                <Grid item item xs="12" md="3" style={
-                                    {
-                                        paddingBottom: "10px"
-                                    }
-                                }>
+                                <Grid item xs="12" md="3" >
                                     <Typography>Jul 2020 - present</Typography>
                                 </Grid>
                                 <Grid item >
@@ -231,17 +234,17 @@ export const Intro = (props) => {
                                 </Grid>
                             </Grid>
                         </ListItem>
-                        <br></br>
-                        <ListItem>
+                        <ListItem style={
+                            {
+                                paddingBottom: "0px",
+                                marginBottom: "20px"
+                            }
+                        }>
                             <Grid container direction="row">
                                 {/* <Grid item>
                                     <SchoolIcon/>
                                 </Grid> */}
-                                <Grid item  xs="12" md="3" style={
-                                    {
-                                        paddingBottom: "10px"
-                                    }
-                                }>
+                                <Grid item  xs="12" md="3" >
                                     <Typography>Dec 2018 - Jun 2020</Typography>
                                 </Grid>
                                 <Grid item>
@@ -277,20 +280,14 @@ export const Intro = (props) => {
                                 </Grid>
                             </Grid>
                         </ListItem>
-                    </List>
                 </Grid>
                 <Grid item>
-                    <Typography style={
+                    <Typography className="subtitle_work" style={
                         {
                             fontWeight: "500",
                         }
                     }>Work Experience 
                     </Typography>
-                    <List dense="false" style={
-                        {
-                            // paddingBottom: "0px"
-                        }
-                    }>
                         <ListItem style={
                             {
                                 // paddingBottom: "0px"
@@ -324,8 +321,6 @@ export const Intro = (props) => {
                                 </Grid>
                             </Grid>
                         </ListItem>
-
-                    </List>
                 </Grid>
                 <Grid item>
                     <Typography style={
@@ -473,7 +468,7 @@ export const Intro = (props) => {
                 justify="space-evenly"
                 alignItems="center"
                 >
-                    <Grid item xs={12} sm={6} md={2} lg={2}>
+                    <Grid item xs={12} sm={5} md={2} lg={2}>
                         <br></br>
                         <Paper style={
                             {
@@ -515,7 +510,7 @@ export const Intro = (props) => {
                             }>Mandarin Chinese <br></br>(Conversational)</Typography>
                         </Paper>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={2} lg={2}>
+                    <Grid item xs={12} sm={5} md={2} lg={2}>
                         <br></br>
                         <Paper style={
                             {
@@ -563,7 +558,7 @@ export const Intro = (props) => {
                             }>C</Typography>
                         </Paper>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={2} lg={2}>
+                    <Grid item xs={12} sm={5} md={2} lg={2}>
                         <br></br>
                         <Paper style={
                             {
@@ -611,7 +606,7 @@ export const Intro = (props) => {
                             }>HTML, CSS</Typography>
                         </Paper>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={2} lg={2}>
+                    <Grid item xs={12} sm={5} md={2} lg={2}>
                         <br></br>
                         <Paper style={
                             {
@@ -660,7 +655,7 @@ export const Intro = (props) => {
                             }><br/></Typography>
                         </Paper>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={2} lg={2}>
+                    <Grid item xs={12} sm={5} md={2} lg={2}>
                         <br></br>
                         <Paper style={
                             {
@@ -713,6 +708,61 @@ export const Intro = (props) => {
         )
     }
     // Contact
+    const renderContact = () => {
+        return (
+            <Grid container direction="column">
+            <Grid item>
+                <Typography variant="h5">Contact</Typography>
+            </Grid>
+                <Grid item>
+                    <Divider style={
+                        {
+                            marginTop:"8px",
+                            marginBottom:"5px"
+                        }
+                    }></Divider>
+                </Grid>
+                <List dense="false">
+                        <ListItem>
+                            <AiOutlineMail style={
+                                {
+                                    fontSize: "18px"
+                                }
+                            }></AiOutlineMail>
+                            <Typography style={
+                                {
+                                    fontSize: "15px"
+                                }
+                            }>&nbsp; jiye.lee@mrl.snu.ac.kr</Typography>
+                        </ListItem>
+                        <ListItem>
+                            <AiOutlineMail style={
+                                {
+                                    fontSize: "18px"
+                                }
+                            }></AiOutlineMail>
+                            <Typography style={
+                                {
+                                    fontSize: "15px"
+                                }
+                            }>&nbsp; kay2353@snu.ac.kr</Typography>
+                        </ListItem>
+                        <ListItem>
+                            <AiOutlineGithub style={
+                                {
+                                    fontSize: "18px"
+                                }
+                            }></AiOutlineGithub>
+                            <Typography style={
+                                {
+                                    fontSize: "15px"
+                                }
+                            }>&nbsp; github.com/jiyewise</Typography>
+                        </ListItem>
+                </List>
+            </Grid>
+        )
+    }
 
     return (
         <ThemeProvider theme={theme}>
@@ -733,6 +783,14 @@ export const Intro = (props) => {
             <br></br>
             {renderContact()}
             <br></br>
+            <Typography style={
+                {
+                    textAlign: "center",
+                    paddingBottom: "10px",
+                    fontWeight: "600",
+                    color: "#ef919c"
+                }
+            }>&copy; Jiye Lee, 2021</Typography>
             </div>
     </ThemeProvider>
     )
