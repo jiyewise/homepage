@@ -49,17 +49,19 @@ export const Intro = (props) => {
                     </Grid>
                     <Grid item >
                         {/* <h1>Jiye Lee</h1> */}
-                        <Divider style={
+                        {/* <Divider style={
                             {
                                 marginTop:"8px",
                                 marginBottom:"5px"
                             }
-                        }></Divider>
+                        }></Divider> */}
                         <Typography variant="h6" style={
                             {
                                 fontWeight: "400",
                                 fontSize: "16px",
-                                fontStyle: "italic"
+                                fontStyle: "italic",
+                                marginTop: "8px",
+                                color: "#5a5a5a"
                             }
                         }>Steady Enthusiast. Researcher in Training.</Typography>
                     </Grid>
@@ -87,15 +89,18 @@ export const Intro = (props) => {
                         }></Divider>
                     <Typography style={
                         {
-                            fontSize: "15px"
+                            fontSize: "15px",
+                            // textAlign: "justify"
                         }
                     }>Hi there, I am a final year undergrad at Seoul National University, majoring in <strong style={{fontWeight: "500"}}>Chemistry</strong> and <strong style={{fontWeight: "500"}}>Computer Science & Engineering</strong>.
-                        Currently I am working as a research intern in <strong style={{fontWeight: "500"}}>SNU Movement Research Lab</strong> advised by <strong style={{fontWeight: "500"}}>Jehee Lee</strong>, focusing on <strong style={{fontWeight: "500"}}>computer simulations of human and animal movements</strong>.
-                        <br/><br/>I am now exploring various topics which include, but are not limited to <strong style={{fontWeight: "500"}}>physics-based simulations</strong>, <strong style={{fontWeight: "500"}}>reinforcement learning</strong>, <strong style={{fontWeight: "500"}}>robotics</strong> and <strong style={{fontWeight: "500"}}>biomechanics</strong>.
-                        Previously, I have been interested in <strong style={{fontWeight: "500"}}>biophysics</strong>, exploring diverse <strong style={{fontWeight: "500"}}> physico-chemical approaches for understanding protein dynamics</strong>. <br></br><br></br>Find out more about my projects <u>here</u>. <small>(will be updated soon!)</small>
+                        Currently I am working as a research intern in <strong style={{fontWeight: "500"}}>SNU Movement Research Lab</strong> advised by <strong style={{fontWeight: "500"}}>Jehee Lee</strong>, focusing on <strong style={{fontWeight: "500"}}>computer simulations of human and animal movements</strong>. 
                         <br></br>
                         <br></br>
-                        Outside of research, I have a great passion for <strong style={{fontWeight: "500"}}>digital art, hand-drawing, live music concerts,</strong> and <strong style={{fontWeight: "500"}}>Sci-Fi</strong>. Click <u>here</u> to check out my personal work. <br></br><small>(will be updated soon!)</small>
+                        I am now exploring various topics which include, but are not limited to <strong style={{fontWeight: "500"}}>physics-based simulations</strong>, <strong style={{fontWeight: "500"}}>robotics</strong>, <strong style={{fontWeight: "500"}}>reinforcement learning</strong> and <strong style={{fontWeight: "500"}}>biomechanics</strong>.
+                        Previously, I have been interested in <strong style={{fontWeight: "500"}}>biophysics</strong>, exploring diverse <strong style={{fontWeight: "500"}}> physico-chemical approaches for protein dynamics</strong>. <br></br><br></br>Find out more about my projects <u>here</u> or download my <u>CV</u>. <small>(will be updated soon!)</small>
+                        <br></br>
+                        <br></br>
+                        Outside of research, I have a great passion for <strong style={{fontWeight: "500"}}>digital art, hand-drawing, live rock concerts,</strong> and <strong style={{fontWeight: "500"}}>Sci-Fi</strong>. Click <u>here</u> to check out my personal work. <small>(will be updated soon!)</small>
                     </Typography>
                 </Grid>
             </Grid>
@@ -116,7 +121,7 @@ export const Intro = (props) => {
                             }
                         }></Divider>
                     <List dense="false">
-                        <ListItem>
+                        <ListItem className="listitem">
                             <Grid container direction="row"  style={
                                 {
                                     paddingLeft: "0px"
@@ -125,12 +130,15 @@ export const Intro = (props) => {
                                 {/* <Grid item>
                                     <SchoolIcon/>
                                 </Grid> */}
-                                <Grid item xs="12" md="3" style={
+                                <Grid item xs="12" md="3">
+                                    <Typography style={
                                     {
-                                        paddingBottom: "10px"
+                                        paddingBottom: "5px",
+                                        fontSize: "15px",
+                                        fontWeight: "500",
+                                        color: "#5a5a5a"
                                     }
-                                }>
-                                    <Typography>Mar 2017 - Aug 2021  (Expected)</Typography>
+                                }>Mar 2017 - Aug 2021  (Expected)</Typography>
                                 </Grid>
                                 <Grid item>
                                 <Typography style={
@@ -149,17 +157,20 @@ export const Intro = (props) => {
                             </Grid>
                         </ListItem>
                         <br></br>
-                        <ListItem>
+                        <ListItem className="listitem">
                             <Grid container direction="row">
                                 {/* <Grid item>
                                     <SchoolIcon/>
                                 </Grid> */}
-                                <Grid item xs="12" md="3" style={
+                                <Grid item xs="12" md="3">
+                                    <Typography style={
                                     {
-                                        paddingBottom: "10px"
+                                        paddingBottom: "5px",
+                                        fontSize: "15px",
+                                        fontWeight: "500",
+                                        color: "#5a5a5a"
                                     }
-                                }>
-                                    <Typography >Mar 2014 - Feb 2017</Typography>
+                                } >Mar 2014 - Feb 2017</Typography>
                                 </Grid>
                                 <Grid item>
                                 <Typography style={
@@ -219,7 +230,14 @@ export const Intro = (props) => {
                                     <SchoolIcon/>
                                 </Grid> */}
                                 <Grid item xs="12" md="3" >
-                                    <Typography>Jul 2020 - present</Typography>
+                                    <Typography style={
+                                        {
+                                            paddingBottom: "5px",
+                                            fontSize: "15px",
+                                            fontWeight: "500",
+                                            color: "#5a5a5a"
+                                        }
+                                    }>Jul 2020 - present</Typography>
                                 </Grid>
                                 <Grid item >
                                         <Grid container direction="row">
@@ -246,7 +264,7 @@ export const Intro = (props) => {
                                 </Grid>
                             </Grid>
                         </ListItem>
-                        <ListItem style={
+                        <ListItem className="listitem" style={
                             {
                                 paddingBottom: "0px",
                                 marginBottom: "0px"
@@ -257,7 +275,14 @@ export const Intro = (props) => {
                                     <SchoolIcon/>
                                 </Grid> */}
                                 <Grid item  xs="12" md="3" >
-                                    <Typography>Dec 2018 - Jun 2020</Typography>
+                                    <Typography style={
+                                        {
+                                            paddingBottom: "5px",
+                                            fontSize: "15px",
+                                            fontWeight: "500",
+                                            color: "#5a5a5a"
+                                        }
+                                    }>Dec 2018 - Jun 2020</Typography>
                                 </Grid>
                                 <Grid item>
                                 {/* <Typography>NMR Laboratory of Protein Aggregation and Recognition</Typography>
@@ -300,7 +325,7 @@ export const Intro = (props) => {
                         }
                     }>Work Experience 
                     </Typography>
-                        <ListItem style={
+                        <ListItem className="listitem" style={
                             {
                                 paddingBottom: "0px"
                             }
@@ -310,12 +335,15 @@ export const Intro = (props) => {
                                 {/* <Grid item>
                                     <SchoolIcon/>
                                 </Grid> */}
-                                <Grid item item xs="12" md="3" style={
+                                <Grid item xs="12" md="3">
+                                    <Typography style={
                                     {
-                                        paddingBottom: "10px"
+                                        paddingBottom: "5px",
+                                        fontSize: "15px",
+                                        fontWeight: "500",
+                                        color: "#5a5a5a"
                                     }
-                                }>
-                                    <Typography>Mar 2021 - Jun 2021</Typography>
+                                }>Mar 2021 - Jun 2021</Typography>
                                 </Grid>
                                 <Grid item >
                                 <Typography style={
@@ -327,7 +355,7 @@ export const Intro = (props) => {
                                     {
                                         fontSize: "15px",
                                         // fontStyle: "italic",
-                                        paddingTop: "5px"
+                                        paddingTop: "4px"
                                     }
                                 }>Data Structures Course (21' Spring)</Typography>
                                 </Grid>
@@ -340,9 +368,9 @@ export const Intro = (props) => {
                             fontWeight: "500",
                             marginTop: "10px"
                         }
-                    } className="subtitle">Volunteer Services
+                    } className="subtitle_vol">Volunteer Services
                     </Typography>
-                        <ListItem style={
+                        <ListItem className="listitem" style={
                             {
                                 paddingBottom: "0px"
                             }
@@ -352,12 +380,15 @@ export const Intro = (props) => {
                                 {/* <Grid item>
                                     <SchoolIcon/>
                                 </Grid> */}
-                                <Grid item xs="12" md="3" style={
+                                <Grid item xs="12" md="3">
+                                    <Typography style={
                                     {
-                                        // paddingBottom: "10px"
+                                        paddingBottom: "5px",
+                                        fontSize: "15px",
+                                        fontWeight: "500",
+                                        color: "#5a5a5a"
                                     }
-                                }>
-                                    <Typography>Jun 2019 - Jul 2019 </Typography>
+                                }>Jun 2019 - Jul 2019 </Typography>
                                 </Grid>
                                 <Grid item >
                                 <Typography style={
@@ -369,9 +400,9 @@ export const Intro = (props) => {
                                     {
                                         fontSize: "15px",
                                         // fontStyle: "italic",
-                                        paddingTop: "5px"
+                                        paddingTop: "4px"
                                     }
-                                }>Society of Scientists and Engineers without Borders, Seoul, South Korea</Typography>
+                                }>Scientists and Engineers Without Borders, Seoul, South Korea</Typography>
                                 </Grid>
                             </Grid>
                         </ListItem>
@@ -399,7 +430,7 @@ export const Intro = (props) => {
                     }></Divider>
                 </Grid>
                 <List>
-                <ListItem>
+                <ListItem className="listitem">
                     <Grid item>
                         <Typography style={
                             {
@@ -416,7 +447,7 @@ export const Intro = (props) => {
                     </Grid>
                                 
                 </ListItem>
-                <ListItem>
+                <ListItem className="listitem">
                     <Grid item>
                         <Typography style={
                             {
