@@ -60,7 +60,7 @@ export const Intro = (props) => {
                                 fontWeight: "400",
                                 fontSize: "16px",
                                 fontStyle: "italic",
-                                marginTop: "8px",
+                                marginTop: "5px",
                                 color: "#5a5a5a"
                             }
                         }>Steady Enthusiast. Researcher in Training.</Typography>
@@ -463,7 +463,7 @@ export const Intro = (props) => {
                         }>2<sup>nd</sup> place award, Department of Chemistry in Seoul National University</Typography>
                     </Grid>
                 </ListItem>
-                <ListItem>
+                <ListItem className="listitem">
                     <Grid item>
                         <Typography style={
                             {
