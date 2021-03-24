@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.045f4b9b.chunk.css",
+    "main.css": "/static/css/main.c6b409f9.chunk.css",
     "main.js": "/static/js/main.97d7c5d0.chunk.js",
     "main.js.map": "/static/js/main.97d7c5d0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0e18adf9.js",
@@ -10,7 +10,7 @@
     "static/js/3.60766711.chunk.js": "/static/js/3.60766711.chunk.js",
     "static/js/3.60766711.chunk.js.map": "/static/js/3.60766711.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.045f4b9b.chunk.css.map": "/static/css/main.045f4b9b.chunk.css.map",
+    "static/css/main.c6b409f9.chunk.css.map": "/static/css/main.c6b409f9.chunk.css.map",
     "static/js/2.2c9ef49d.chunk.js.LICENSE.txt": "/static/js/2.2c9ef49d.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
     "static/media/index.css": "/static/media/raleway-v19-latin-regular.f8d47ad7.woff"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.0e18adf9.js",
     "static/js/2.2c9ef49d.chunk.js",
-    "static/css/main.045f4b9b.chunk.css",
+    "static/css/main.c6b409f9.chunk.css",
     "static/js/main.97d7c5d0.chunk.js"
   ]
 }
