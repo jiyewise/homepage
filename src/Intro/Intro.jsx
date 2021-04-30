@@ -323,7 +323,7 @@ export const Intro = (props) => {
                         {
                             fontWeight: "500",
                         }
-                    }>Work Experience 
+                    }>Teaching Experience 
                     </Typography>
                         <ListItem className="listitem" style={
                             {
